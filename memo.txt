@@ -30,6 +30,8 @@ supabaseプロジェクト作成
 テーブル作成
 src/database/sqls
 
+認証userテーブル、usersテーブルのレコード作成
+
 
 cd ~/workspace/github/supabase-test/src
 

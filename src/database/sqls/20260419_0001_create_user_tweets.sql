@@ -1,6 +1,6 @@
 create table user_tweets (
   id bigint generated always as identity primary key,
-  user_id uuid references auth.users(id) on delete cascade,
+  user_id uuid references users(id) on delete cascade,
   content text not null,
   created_at timestamp default now()
 );
