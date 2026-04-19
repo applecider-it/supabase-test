@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  /* ボタン */
+
+  .app-btn {
+    @apply px-4 py-2 rounded-lg;
+  }
+  .app-btn-primary {
+    @apply app-btn text-white bg-blue-500;
+  }
+  .app-btn-secondary {
+    @apply app-btn bg-gray-500 hover:bg-gray-600 text-white;
+  }
+
+  /* 通常のリンク */
+  .app-link-normal {
+    @apply text-blue-600 hover:underline;
+  }
+
+  /* フォームのテキストボックス */
+  .app-form-input {
+    @apply w-full border rounded p-2;
+  }
+
+  /* フォームのエラー */
+  .app-form-error {
+    @apply text-red-500 my-3;
+  }
+
+  /* カード */
+  .app-card {
+    @apply bg-white rounded-2xl shadow-xl p-6 hover:scale-105 transition;
+  }
+}
