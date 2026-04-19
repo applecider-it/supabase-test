@@ -1,0 +1,29 @@
+
+cd ~/workspace/github/supabase-test
+
+-----------------------------------
+
+port
+
+vue: 5173
+
+-----------------------------------
+
+vue
+
+cd ~/workspace/github/supabase-test/vue
+
+npm run dev
+
+http://localhost:5173/
+
+test@localhost.com / testtest
+
+test2@localhost.com / test2test2
+
+
+http://localhost:5173/admin-secret
+
+admin@localhost.com / adminadmin
+
+-----------------------------------
