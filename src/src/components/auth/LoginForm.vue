@@ -17,7 +17,7 @@ const execLogin = async () => {
     password: password.value,
   });
 
-  console.log(ret);
+  console.log('execLogin', ret);
 };
 </script>
 

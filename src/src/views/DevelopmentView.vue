@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import LoginForm from '@/components/auth/LoginForm.vue';
-import Test from '@/components/development/Test.vue';
+import AuthTest from '@/components/development/AuthTest.vue';
 import TweetTest from '@/components/development/TweetTest.vue';
 
 const sectionClass = 'border-2 p-5';
@@ -15,7 +15,7 @@ const sectionClass = 'border-2 p-5';
         <LoginForm />
       </div>
       <div :class="sectionClass">
-        <Test />
+        <AuthTest />
       </div>
       <div :class="sectionClass">
         <TweetTest />

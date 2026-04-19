@@ -10,6 +10,11 @@ const handleGetAuthUser = async () => {
   const user = await getAuthUser();
   console.log('handleGetAuthUser', user);
 };
+
+const handleLogout = async () => {
+  const retLogout = await supabase.auth.signOut()
+  console.log('handleGetAuthUser', retLogout);
+};
 </script>
 
 <template>
@@ -17,6 +22,11 @@ const handleGetAuthUser = async () => {
     <div>
       <button @click="handleGetAuthUser" class="app-btn-primary">
         ログインユーザー取得
+      </button>
+    </div>
+    <div>
+      <button @click="handleLogout" class="app-btn-primary">
+        ログアウト
       </button>
     </div>
   </div>
