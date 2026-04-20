@@ -1,28 +1,19 @@
-<script setup lang="ts">
-import LoginForm from '@/components/auth/LoginForm.vue';
-import AuthTest from '@/components/development/AuthTest.vue';
-import TweetTest from '@/components/development/TweetTest.vue';
-import FunctionTest from '@/components/development/FunctionTest.vue';
-
-const sectionClass = 'border-2 p-5';
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <div>
     開発者向けページ
 
     <div class="space-y-5 mt-10">
-      <div :class="sectionClass">
-        <LoginForm />
+      <div>
+        <RouterLink to="/development/sb" class="app-link-normal"
+          >supabase</RouterLink
+        >
       </div>
-      <div :class="sectionClass">
-        <AuthTest />
-      </div>
-      <div :class="sectionClass">
-        <TweetTest />
-      </div>
-      <div :class="sectionClass">
-        <FunctionTest />
+      <div>
+        <RouterLink to="/development/fb" class="app-link-normal"
+          >firebase</RouterLink
+        >
       </div>
     </div>
   </div>

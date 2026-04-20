@@ -14,6 +14,16 @@ const router = createRouter({
       name: 'development',
       component: () => import('../views/DevelopmentView.vue'),
     },
+    {
+      path: '/development/sb',
+      name: 'development-sb',
+      component: () => import('../views/DevelopmentSbView.vue'),
+    },
+    {
+      path: '/development/fb',
+      name: 'development-fb',
+      component: () => import('../views/DevelopmentFbView.vue'),
+    },
   ],
 })
 
