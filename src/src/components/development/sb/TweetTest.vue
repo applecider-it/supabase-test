@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-import { getTweets, postTweet } from '@/services/tweet/tweet';
+import { getTweets, postTweet } from '@/services/supabase/tweet/tweet';
 
 const content = ref('テストツイート');
 const tweets = ref<any[]>([]);
