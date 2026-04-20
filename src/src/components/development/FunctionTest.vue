@@ -1,26 +1,11 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-import { supabase, supabaseFunction, sendFunction } from '@/services/supabase/supabase';
+import { supabase, execFunction } from '@/services/supabase/supabase';
 
 const handleFunctionTest = async () => {
-  const ret = await sendFunction('hello', { name: 'テスト' });
+  const ret = await execFunction('hello', { name: 'テスト' });
 
-  console.log('handleFunctionTest', ret);
-
-  const {
-    data: { session },
-  } = await supabase.auth.getSession();
-
-  console.log(session);
-
-  const ret2 = await supabaseFunction.functions.invoke('hello', {
-    body: { name: 'テスト2' },
-    headers: {
-      Authorization: `Bearer ${session?.access_token}`,
-    },
-  });
-
-  console.log('ret2.data', ret2.data);
+  console.log('handleFunctionTest', ret.data);
 };
 </script>
 
