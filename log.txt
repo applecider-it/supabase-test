@@ -32,3 +32,9 @@ npm install -g firebase-tools
 firebase login
 
 firebase init functions
+
+-----------------------------------
+
+npx supabase functions new tweets
+
+
