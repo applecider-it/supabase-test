@@ -45,6 +45,20 @@ npx supabase secrets set APP_SUPABASE_URL=https://[project-id].supabase.co
 npx supabase secrets set APP_SUPABASE_PUBLISHABLE_KEY=sb_publishable_?????
 
 
+----
+
+管理画面
+
+http://127.0.0.1:54323/
+
+
+----
+
+Keyなどの確認
+
+npx supabase start
+
+
 -----------------------------------
 
 セットアップ
@@ -59,6 +73,9 @@ supabaseプロジェクト作成
 
 テーブル作成
 src/database/sqls
+
+
+管理画面
 
 認証userテーブル、usersテーブルのレコード作成
 
@@ -89,6 +106,7 @@ npx supabase start
 
   public keyを/src/.envに書き込む
 
+npx supabase db reset
 
 ----
 

@@ -37,4 +37,14 @@ firebase init functions
 
 npx supabase functions new tweets
 
+npx supabase migration new create_users_table
+
+npx supabase migration new create_user_tweets_table
+
+npx supabase link
+
+
+export SUPABASE_DB_PASSWORD='サーバーのDBパスワード'
+
+npx supabase db pull
 
