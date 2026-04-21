@@ -87,6 +87,8 @@ npx supabase login
 
 npx supabase start
 
+  public keyを/src/.envに書き込む
+
 
 ----
 
