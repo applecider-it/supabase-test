@@ -45,11 +45,6 @@ npx supabase db push
 npx supabase functions deploy
 
 
-npx supabase secrets set APP_SUPABASE_URL=https://[project-id].supabase.co
-npx supabase secrets set APP_SUPABASE_PUBLISHABLE_KEY=sb_publishable_?????
-npx supabase secrets set APP_SUPABASE_SECRET_KEY=sb_publishable_?????
-
-
 ----
 
 ローカル管理画面
