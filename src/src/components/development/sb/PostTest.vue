@@ -27,6 +27,10 @@ const handleGetPostsByFunc = async () => {
   const rows = ret.posts;
 
   console.log('rows', rows);
+
+  if (!rows) return;
+
+  posts.value = rows;
 };
 
 const handlePostPost = async () => {

@@ -7,7 +7,10 @@ export const getPosts = async (supabase) => {
       `
       id,
       content,
-      created_at
+      created_at,
+      users (
+        name
+      )
     `,
     )
     .order('created_at', { ascending: false })
