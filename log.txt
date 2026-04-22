@@ -48,3 +48,14 @@ export SUPABASE_DB_PASSWORD='サーバーのDBパスワード'
 
 npx supabase db pull
 
+npx supabase migration new create_user_posts_table
+
+npx supabase migration up
+
+npx supabase migration down
+
+
+docker ps
+
+docker logs -f supabase_edge_runtime_sb
+
