@@ -23,6 +23,10 @@ const handleGetPostsByFunc = async () => {
   const ret = await getPostsByFunc();
 
   console.log('handleGetPostsByFunc', ret);
+
+  const rows = ret.posts;
+
+  console.log('rows', rows);
 };
 
 const handlePostPost = async () => {

@@ -47,7 +47,7 @@ npx supabase secrets set APP_SUPABASE_PUBLISHABLE_KEY=sb_publishable_?????
 
 ----
 
-管理画面
+ローカル管理画面
 
 http://127.0.0.1:54323/
 

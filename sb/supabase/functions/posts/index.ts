@@ -14,8 +14,6 @@ Deno.serve(async (req) => {
   const corsRet = execCors(req);
   if (corsRet) return corsRet;
 
-  const { name } = await req.json();
-
   const supabase = await getSupabase(req);
 
   const retUser = await supabase.auth.getUser();
@@ -25,8 +23,8 @@ Deno.serve(async (req) => {
   console.log({ retUser, posts });
 
   const data = {
-    message: `Hello ${name}!`,
     user: retUser.data.user,
+    posts,
   };
 
   return new Response(JSON.stringify(data), {
