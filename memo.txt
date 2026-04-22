@@ -38,6 +38,9 @@ curl -i --location --request POST 'http://127.0.0.1:54321/functions/v1/hello' \
 
 デプロイ
 
+必要な場合
+  npx supabase login
+
 export SUPABASE_DB_PASSWORD='サーバーのDBパスワード'
 
 npx supabase db push
