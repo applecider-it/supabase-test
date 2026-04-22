@@ -59,3 +59,5 @@ docker ps
 
 docker logs -f supabase_edge_runtime_sb
 
+
+npx supabase functions new posts
