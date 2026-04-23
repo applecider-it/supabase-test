@@ -1,5 +1,5 @@
 
-cd ~/workspace/github/baas-test
+cd ~/workspace/github/supabase-test
 
 -----------------------------------
 
@@ -11,7 +11,7 @@ vue: 5173
 
 vue
 
-cd ~/workspace/github/baas-test/src
+cd ~/workspace/github/supabase-test/src
 
 npm run dev
 
@@ -25,7 +25,7 @@ supabase
 
 Docker起動
 
-cd ~/workspace/github/baas-test/sb
+cd ~/workspace/github/supabase-test/sb
 
 npx supabase functions serve --env-file .env
 
@@ -89,7 +89,7 @@ src/database/sqls
 
 vue
 
-cd ~/workspace/github/baas-test/src
+cd ~/workspace/github/supabase-test/src
 
 npm ci
 
@@ -104,7 +104,7 @@ supabase edge function
 
 Docker起動
 
-cd ~/workspace/github/baas-test/sb
+cd ~/workspace/github/supabase-test/sb
 
 npx supabase login
 
@@ -118,26 +118,6 @@ npx supabase start
 
 
 npx supabase db reset
-
-----
-
-firebase function
-
-
-cd ~/workspace/github/baas-test/fb
-
-firebase login
-
-一旦ファイルを退避して
-
-firebase init functions
-
-退避したファイルで上書き
-
-cp .firebaserc.example .firebaserc
-
-プロジェクトID変更
-
 
 -----------------------------------
 

@@ -5,7 +5,7 @@ import {
   getPostsByFunc,
   postPost,
   storePostByFunc,
-} from '@/services/supabase/post/post';
+} from '@/services/post/post';
 
 const content = ref('テスト投稿');
 const posts = ref<any[]>([]);

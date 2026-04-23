@@ -1,6 +1,6 @@
 import { supabase } from '@/services/supabase/supabase';
 
-import { getAuthUser } from '@/services/supabase/user/auth';
+import { getAuthUser } from '@/services/user/auth';
 
 /** ツイート一覧取得 */
 export const getTweets = async () => {

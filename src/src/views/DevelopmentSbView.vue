@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import AuthTest from '@/components/development/sb/AuthTest.vue';
-import TweetTest from '@/components/development/sb/TweetTest.vue';
-import PostTest from '@/components/development/sb/PostTest.vue';
-import FunctionTest from '@/components/development/sb/FunctionTest.vue';
+import AuthTest from '@/components/development/AuthTest.vue';
+import TweetTest from '@/components/development/TweetTest.vue';
+import PostTest from '@/components/development/PostTest.vue';
+import FunctionTest from '@/components/development/FunctionTest.vue';
 
 const sectionClass = 'border-2 p-5';
 </script>

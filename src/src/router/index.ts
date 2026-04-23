@@ -19,11 +19,6 @@ const router = createRouter({
       name: 'development-sb',
       component: () => import('../views/DevelopmentSbView.vue'),
     },
-    {
-      path: '/development/fb',
-      name: 'development-fb',
-      component: () => import('../views/DevelopmentFbView.vue'),
-    },
   ],
 })
 

@@ -2,7 +2,7 @@
 import { ref } from 'vue';
 import { useRouter } from 'vue-router';
 import { supabase } from '@/services/supabase/supabase';
-import { getAuthUser } from '@/services/supabase/user/auth';
+import { getAuthUser } from '@/services/user/auth';
 
 const email = ref(import.meta.env.VITE_TESTUSER_EMAIL);
 const password = ref('testtest');

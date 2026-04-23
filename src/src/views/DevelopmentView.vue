@@ -10,11 +10,6 @@
           >supabase</RouterLink
         >
       </div>
-      <div>
-        <RouterLink to="/development/fb" class="app-link-normal"
-          >firebase</RouterLink
-        >
-      </div>
     </div>
   </div>
 </template>
